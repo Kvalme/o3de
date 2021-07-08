@@ -46,7 +46,7 @@ namespace EMotionFX::Pipeline::Rule
 
         MotionMetaDataRule();
         MotionMetaDataRule(const AZStd::shared_ptr<MotionMetaData>& data);
-        ~MotionMetaDataRule() final = default;
+        ~MotionMetaDataRule() = default;
 
         const AZStd::shared_ptr<MotionMetaData>& GetData() const override      { return m_data; }
         void SetData(const AZStd::shared_ptr<MotionMetaData>& data) override   { m_data = data; }
